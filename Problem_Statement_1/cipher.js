@@ -70,7 +70,7 @@ function decodeWithoutShift(msg) {
   return encode(msg, expectedShift);
 }
 let msg =
-  "Longer sentences should produce more accurate results as compared to shorter sentences";
+  "Longer sentences should produce more accurate results as compared to shorter ones";
 let encoded = encode(msg, 3);
 console.log("Encoded: ", encoded);
 console.log("Program's attempt at decoding: ", decodeWithoutShift(encoded));
